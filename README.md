@@ -54,11 +54,11 @@ In questo modo, il Task Scheduler eseguirà lo script PowerShell al momento spec
 ## Spegnimento automatico di un computer
 Puoi seguire questi passaggi per creare un'attività di pianificazione per lo spegnimento del PC:
 
-* Apri il ```Pannello di controllo``` di Windows e seleziona ```Strumenti di amministrazione``` > ```Attività pianificate```.
+* Apri il ```Pannello di controllo``` di Windows e seleziona ```Strumenti di amministrazione``` > ```Utilità di pianificazione```.
 * Nella finestra di ```Attività pianificate```, seleziona ```Crea attività``` dal menu laterale.
 * Nella finestra di creazione dell'attività, nella scheda ```Generale```, assegna un nome all'attività (ad esempio, ```Spegnimento PC ogni Venerdì```).
 * Nella scheda ```Attivazione```, seleziona ```Settimanale``` e poi seleziona il giorno della settimana desiderato (in questo caso ```Venerdì```).
-* Inserisci l'ora esatta in cui desideri che il PC si spenga nel campo ```Attiva```. Ad esempio, inserisci ```19:00``` per spegnere il PC ogni venerdì alle 19.
+* Inserisci l'ora esatta in cui desideri che il PC si spenga nel campo ```Attivazione```. Ad esempio, inserisci ```19:00``` per spegnere il PC ogni venerdì alle 19.
 * Nella scheda ```Azione```, seleziona ```Avvia un programma```. Nel campo ```Programma/script``` immetti ```C:\Windows\System32\shutdown.exe``` e nel campo ```Argomenti``` inserisci il seguente testo: ```-s -t 00``` (senza virgolette). Questi comandi inviano una richiesta di spegnimento al sistema operativo al momento stabilito.
 * Fai clic su ```OK``` per creare l'attività di pianificazione.
 
